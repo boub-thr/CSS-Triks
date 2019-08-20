@@ -1,0 +1,34 @@
+body{
+    margin: 30px;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+p{
+    border-left: 6px solid #ffeb3b;
+    background: #ffffcc;
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin: 0 auto 2rem;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    background: #a4d0f0;
+    margin: 6rem auto;
+/*    animation with transition */
+/*
+    transition-duration: 500ms;
+    transition-property: background, transform;
+    transition-timing-function: ease;
+    transition-delay: 100ms;
+*/
+    transition: 500ms background ease-in , 250ms 500ms transform ease-out;
+}
+.box:hover{
+    background: #f06672a6;
+    transform: rotate(45deg);
+}
