@@ -6,8 +6,8 @@ h1{
     margin: 0;
 }
 p{
-    border-left: 6px solid #ffeb3b;
-    background: #ffffcc;
+    border-left: 6px solid rgb(255, 63, 63);
+    background: rgba(255, 86, 86, 0.35);
     padding: 2rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
