@@ -1,0 +1,115 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero-section {
+    width: 100%;
+    height: 70vh ;
+    position: relative;
+    background: linear-gradient(to right, #dd5e89, #f7bb97);
+    min-width: 340px;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    z-index: -6;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #dd5e89, #f7bb97);
+    transform-origin: top right;
+    transform: skewY(-4deg);
+}
+
+.section-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 4rem 0 0 4rem;
+    background-color: transparent;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.section-wrapper h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.section-wrapper h1 span {
+    font-weight: 300;
+}
+
+.section-wrapper a {
+    background-color: #dd5e89;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 6px 10px;
+    color: #fff;
+    border: 1px solid #fff;
+    display: inline-block;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+
+}
+
+.section-wrapper a:hover {
+    transform: scale(1.2);
+    margin-left: 16px;
+    background: #615062 ;
+}
+
+.hero-img {
+    transition: 0.5s;
+}
+
+.hero-img img {
+    opacity: 0.8;
+    height: 400px;
+    width: 600px;
+    padding: 8rem 2rem 0 0;
+}
+.section-content1{
+    text-align: center;
+    margin-top: 20%;
+    width: 100%;
+    height: 100vh ;
+    position: relative;
+    background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+    min-width: 340px;
+}
+.section-content1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -6;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+    transform-origin: top left;
+    transform: skewY(-4deg);
+}
+.section-content1 svg{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+.section-content1 h1{
+    color: #fff;
+    font-weight: 500;
+}
+@media(max-width: 850px) {
+    .hero-img {
+        display: none;
+    }
+}
