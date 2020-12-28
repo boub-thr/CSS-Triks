@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --primary-color: rgb(251, 169, 21);
+}
+body {
+  font-family: poppins;
+  color: whitesmoke;
+}
+.hero-section nav {
+  padding: 10px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+    font-size: 1.5rem;
+}
+nav .logo span {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.hero-section nav ul {
+  display: flex;
+  text-transform: uppercase;
+}
+.hero-section nav ul li {
+  cursor: pointer;
+  list-style: none;
+  margin: 20px;
+  transition: .5s;
+}
+.hero-section nav ul li:last-child {
+  margin-right: 0;
+}
+.hero-section nav ul li:hover , .active{
+    border-top: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+.main-content {
+  text-align: center;
+  height: calc(100vh - 85px);
+}
+.main-content h1 {
+  padding-top: 6%;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+.main-content h1 span {
+  font-weight: 500;
+  font-size: 5.8rem;
+  letter-spacing: 10px;
+  color: var(--primary-color);
+  border: 2px solid whitesmoke;
+  padding: 10px 20px;
+}
+.call-to-action {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+  text-transform: uppercase;
+  margin: 20px auto 0;
+}
+.call-to-action a {
+  display: inline-block;
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 10px 20px;
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+.call-to-action a:hover{
+transform: scale(1.2);
+}
+.call-to-action a:nth-child(2) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/******** the box shaps annimation *********/
+.animation-section {
+  overflow: hidden;
+  background: #cb356b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #bd3f32,
+    #cb356b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #bd3f32,
+    #cb356b
+  );
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  z-index: -1;
+}
+.box-shaps {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.box-shaps li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animateShaps 20s linear infinite;
+  bottom: -85px;
+}
+.box-shaps li:nth-child(1) {
+  left: 90%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+.box-shaps li:nth-child(2) {
+  left: 12%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1.5s;
+  animation-duration: 10s;
+}
+.box-shaps li:nth-child(3) {
+  left: 70%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 5.5s;
+}
+.box-shaps li:nth-child(4) {
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 5.5s;
+  animation-duration: 15s;
+}
+.box-shaps li:nth-child(5) {
+  left: 25%;
+  width: 65px;
+  height: 65px;
+  animation-delay: 0s;
+}
+.box-shaps li:nth-child(6) {
+  left: 2%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 0s;
+}
+
+@keyframes animateShaps {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(-800px) rotate(360deg);
+    opacity: 1;
+  }
+}
